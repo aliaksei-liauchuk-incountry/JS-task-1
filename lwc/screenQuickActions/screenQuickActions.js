@@ -6,8 +6,7 @@ export default class RecordContextAction extends LightningElement {
 	getInfo = false;
 
 	handleGetInfo() {
-		const getInfo = true;
-		this.getInfo = getInfo;
+		this.getInfo = true;
 	}
 
 	handleCancel() {
