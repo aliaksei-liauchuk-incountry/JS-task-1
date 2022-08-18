@@ -1,15 +1,15 @@
 <!-- sldsValidatorIgnore -->
 <template>
-	<lightning-quick-action-panel header="Information">
-		<lightning-record-view-form record-id={recordId} object-api-name={objectApiName}>
-			<div if:true={getInfo} class="slds-box slds-theme_default">
-				<lightning-output-field field-name="Id"></lightning-output-field>
-				<lightning-output-field field-name="Name">{Name}</lightning-output-field>
-			</div>
-		</lightning-record-view-form>
-		<div slot="footer">
-			<lightning-button variant="brand" label="Get Record Info" onclick={handleGetInfo}></lightning-button>
-			<lightning-button variant="neutral" label="Cancel" onclick={handleCancel}></lightning-button>
-		</div>
-	</lightning-quick-action-panel>
+    <lightning-quick-action-panel header="Information">
+        <lightning-record-view-form record-id={recordId} object-api-name={objectApiName}>
+            <div if:true={getInfo} class="slds-box">
+                <lightning-output-field field-name="Id"></lightning-output-field>
+                <lightning-output-field field-name="Name"></lightning-output-field>
+            </div>
+        </lightning-record-view-form>
+        <div slot="footer">
+            <lightning-button variant="brand" label="Cancel" onclick={handleCancel} class="slds-m-left_x-small"></lightning-button>
+            <lightning-button variant="brand" label="Get Record Info" onclick={handleGetInfo} class="slds-m-left_x-small"></lightning-button>
+        </div>
+    </lightning-quick-action-panel>
 </template>
